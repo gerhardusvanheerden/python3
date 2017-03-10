@@ -1,6 +1,7 @@
 """ 
 	----------------------------------
-	
+	2017-03-10
+	working copy returning a 3 chat string
 	----------------------------------
 """
 import random
@@ -14,33 +15,33 @@ input_letter_2 = input("What letter do you want? Enter 'v' for vowels, 'c' for c
 input_letter_3 = input("What letter do you want? Enter 'v' for vowels, 'c' for consonants or 'l' for any letter:")
 
 def fn_generator():
-	if string.lower(input_letter_1) == 'v':
+	if str.lower(input_letter_1) == 'v':
 		letter1 = random.choice(vowels)
-	elif string.lower(input_letter_1) == 'c':
+	elif str.lower(input_letter_1) == 'c':
 		letter1 = random.choice(consonants)
-	elif input_letter_1 == 'l'
-		letter1 == random.choice(anyletter)
+	elif str.lower(input_letter_1) == 'l':
+		letter1 = random.choice(anyletter)
 	else:
-		letter1 = string.lower(input_letter_1)
+		letter1 = str.lower(input_letter_1)
 
-	if string.lower(input_letter_2) == 'v':
+	if str.lower(input_letter_2) == 'v':
 		letter2 = random.choice(vowels)
-	elif string.lower(input_letter_2) == 'c':
+	elif str.lower(input_letter_2) == 'c':
 		letter2 = random.choice(consonants)
-	elif input_letter_2 == 'l'
-		letter2 == random.choice(anyletter)
+	elif str.lower(input_letter_2) == 'l':
+		letter2 = random.choice(anyletter)
 	else:
-		letter2 = string.lower(input_letter_2)
+		letter2 = str.lower(input_letter_2)
 
-	if string.lower(input_letter_3) == 'v':
+	if str.lower(input_letter_3) == 'v':
 		letter3 = random.choice(vowels)
-	elif string.lower(input_letter_3) == 'c':
+	elif str.lower(input_letter_3) == 'c':
 		letter3 = random.choice(consonants)
-	elif input_letter_3 == 'l'
-		letter3 == random.choice(anyletter)
+	elif str.lower(input_letter_3) == 'l':
+		letter3 = random.choice(anyletter)
 	else:
-		letter3 = string.lower(input_letter_3)
+		letter3 = str.lower(input_letter_3)
 
-	return retrunname
+	return letter1 + letter2 + letter3
 
 print(fn_generator())
