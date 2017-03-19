@@ -44,4 +44,7 @@ def fn_generator():
 
 	return letter1 + letter2 + letter3
 
-print(fn_generator())
+#print(fn_generator())
+
+for i in range (20):
+	print(fn_generator())
